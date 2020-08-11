@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Welcome! </h1>
+    <h2> Available Routes: </h2>
+    <ul>
+        <li><h4>/api/v1.0/precipitation</h4>
+            <ul>
+                <li>returns JSON dictionary of precipitation values for each date in the dataset</li>
+            </ul>
+        </li>
+        <li><h4>/api/v1.0/stations</h4>
+            <ul>
+                <li>returns name and identifier for the stations from which measurements were taken</li>
+            </ul>
+        </li>
+        <li><h4>/api/v1.0/tobs</h4>
+            <ul>
+                <li>returns JSON list of temperature observations over the past year for the most active station</li>
+            </ul>
+        </li>
+        <li><h4>/api/v1.0/{start}</h4> and <h4>/api/v1.0/{start}/{end}</h4>
+            <ul>
+                <li> returns min, max, and average temperature observations between the specified dates ('yyyy-mm-dd') for the most active station</li>
+                <li> if no end date is given, the end date will be the last date in the dataset</li>
+            </ul>
+        </li>
+      </ul>
+
+</body>
+</html>
