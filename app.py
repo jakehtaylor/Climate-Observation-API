@@ -26,7 +26,7 @@ def prcp():
     last_twelve = session.query(Measure.date, Measure.prcp).filter(Measure.date > '2016-08-22').all()
     session.close()
     last_twelve = dict(last_twelve)
-    return jsonify(last_twelve)
+    return render_template('prcp.html', _data_ = (last_twelve))
 
 @app.route("/api/v1.0/stations")
 def stations():
@@ -35,6 +35,7 @@ def stations():
     session.close()
     sts = dict(sts)
     return jsonify(sts)
+    
 
 @app.route("/api/v1.0/tobs")
 def tobs():
@@ -47,7 +48,7 @@ def tobs():
     Measure.date > '2016-08-22').all() 
     session.close()
     d = {most_act : list(t_obs)}
-    return jsonify(d)
+    return render_template('tobs.html', _data_=(d))
     
 @app.route("/api/v1.0/<start>")
 def start(start):

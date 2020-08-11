@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .aligncenter {
+        text-align: center;
+    }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Observations</title>
+</head>
+
+{% block content %}
+<body style='background-color: azure;'>
+    <p style='font-family:Courier New, Courier, monospace;font-size:small;'> {{ _data_ }} </p>
+    <p class='aligncenter'>
+    <img src="{{url_for('static', filename='tobs.png')}}">
+    </p>
+</body>
+{% endblock %}
+
+</html>
+

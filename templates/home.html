@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Climate API</title>
 </head>
-<body>
+<body style='background-color:azure;font-family:Courier New, Courier, monospace;'>
     <h1> Welcome! </h1>
     <h2> Available Routes: </h2>
     <ul>
-        <li><h4>/api/v1.0/precipitation</h4>
+        <li><a href='http://127.0.0.1:5000//api/v1.0/precipitation'><h4>/api/v1.0/precipitation</h4></a>
             <ul>
-                <li>returns JSON dictionary of precipitation values for each date in the dataset</li>
+                <li>returns dictionary of precipitation values for each date in the dataset and plot for the last year of data</li>
             </ul>
         </li>
-        <li><h4>/api/v1.0/stations</h4>
+        <li><a href='http://127.0.0.1:5000//api/v1.0/stations'> <h4>/api/v1.0/stations</h4></a>
             <ul>
                 <li>returns name and identifier for the stations from which measurements were taken</li>
             </ul>
         </li>
-        <li><h4>/api/v1.0/tobs</h4>
+        <li><a href='http://127.0.0.1:5000//api/v1.0/tobs'> <h4>/api/v1.0/tobs</h4></a>
             <ul>
-                <li>returns JSON list of temperature observations over the past year for the most active station</li>
+                <li>returns list and plot of temperature observations over the past year for the most active station</li>
             </ul>
         </li>
         <li><h4>/api/v1.0/{start}</h4> and <h4>/api/v1.0/{start}/{end}</h4>
