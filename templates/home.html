@@ -7,7 +7,6 @@
     <title>Climate API</title>
 </head>
 <body style='background-color:azure;font-family:Courier New, Courier, monospace;'>
-    <h1> Welcome! </h1>
     <h2> Available Routes: </h2>
     <ul>
         <li><a href='http://127.0.0.1:5000//api/v1.0/precipitation'><h4>/api/v1.0/precipitation</h4></a>
@@ -27,7 +26,8 @@
         </li>
         <li><h4>/api/v1.0/{start}</h4> and <h4>/api/v1.0/{start}/{end}</h4>
             <ul>
-                <li> returns min, max, and average temperature observations between the specified dates ('yyyy-mm-dd') for the most active station</li>
+                <li> format: /api/v1.0/2016-08-22 or /api/v1.0/2016-08-22/2016-09-28 </li>
+                <li> returns min, max, and average temperature observations between the specified dates for the most active station</li>
                 <li> if no end date is given, the end date will be the last date in the dataset</li>
             </ul>
         </li>
