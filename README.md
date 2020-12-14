@@ -1,4 +1,4 @@
-# SQLalchemy Climate API #
+# Climate Observation API #
 
 ## Objectives ##
 
