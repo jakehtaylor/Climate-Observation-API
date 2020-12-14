@@ -1,4 +1,4 @@
-# sqlalchemy-challenge: Climate Research #
+# SQLalchemy Climate API #
 
 ## Objectives ##
 
